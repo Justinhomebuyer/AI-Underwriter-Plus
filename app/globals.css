@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-dark text-white font-sans min-h-screen;
+}
+
+main {
+  @apply max-w-6xl mx-auto px-4 py-6;
+}
+
+.card-gradient {
+  background: linear-gradient(145deg, rgba(10, 13, 21, 0.9), rgba(254, 89, 148, 0.12));
+}
+
+.brand-button {
+  @apply bg-brand text-brand-foreground hover:bg-brand/90 transition-colors;
+}
+
+.accent-button {
+  @apply bg-accent text-accent-foreground hover:bg-accent/90 transition-colors;
+}
+
+.badge-base {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide;
+}
+
+.badge-brand {
+  @apply badge-base bg-brand text-brand-foreground;
+}
+
+.badge-accent {
+  @apply badge-base bg-accent text-accent-foreground;
+}
+
+.badge-muted {
+  @apply badge-base bg-white/10 text-white;
+}
